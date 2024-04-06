@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./styles/global.css";
+import "@/assets/fonts/materialUIFonts"
 
 
 export const metadata: Metadata = {
