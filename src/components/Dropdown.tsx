@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import MenuItem from "@mui/material/MenuItem";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
-import { DropdownOption } from "@/types/CustomComponents";
+import { LabelledOption } from "@/types/CustomComponents";
 import DropdownIcon from "./DropdownIcon";
 import { Theme } from "@/types/CustomTypes";
 interface DropdownProps {
-  options: Array<DropdownOption>;
+  options: Array<LabelledOption>;
   defaultValue?: string;
   theme?: Theme;
   customClass?: string;
@@ -32,7 +32,7 @@ const Dropdown = ({
       classes={{ root: `dropdown ${theme} ${customClass}` }}
       IconComponent={DropdownIcon}
     >
-      {options.map(({ label, value }: DropdownOption) => (
+      {options.map(({ label, value }: LabelledOption) => (
         <MenuItem key={value} value={value}>
           {label}
         </MenuItem>

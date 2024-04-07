@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Dropdown from "@/components/Dropdown";
-import { currencyOptions, langOptions } from "@/static/dropdownOptions";
+import { currencyOptions, langOptions } from "@/static/LabelledOptions";
 
 const LangAndCurrencyNavBar = () => {
   return (

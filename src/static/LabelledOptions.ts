@@ -1,6 +1,6 @@
-import { DropdownOption } from "@/types/CustomComponents";
+import { LabelledOption } from "@/types/CustomComponents";
 
-export const langOptions: Array<DropdownOption> = [
+export const langOptions: Array<LabelledOption> = [
   {
     label: "ENG",
     value: "ENG",
@@ -15,7 +15,7 @@ export const langOptions: Array<DropdownOption> = [
   },
 ];
 
-export const currencyOptions: Array<DropdownOption> = [
+export const currencyOptions: Array<LabelledOption> = [
   {
     label: "USD",
     value: "USD",
@@ -30,7 +30,7 @@ export const currencyOptions: Array<DropdownOption> = [
   },
 ];
 
-export const categories: Array<DropdownOption> = [
+export const categories: Array<LabelledOption> = [
   {
     label: "All categories",
     value: "all",
@@ -57,7 +57,7 @@ export const categories: Array<DropdownOption> = [
   },
 ];
 
-export const homeOptions: Array<DropdownOption> = [
+export const homeOptions: Array<LabelledOption> = [
   {
     label: "Home",
     value: "home",
@@ -68,7 +68,7 @@ export const homeOptions: Array<DropdownOption> = [
   },
 ];
 
-export const aboutOptions: Array<DropdownOption> = [
+export const aboutOptions: Array<LabelledOption> = [
   {
     label: "About",
     value: "about",
@@ -80,7 +80,7 @@ export const aboutOptions: Array<DropdownOption> = [
 ];
 
 
-export const productOptions: Array<DropdownOption> = [
+export const productOptions: Array<LabelledOption> = [
   {
     label: "Product",
     value: "product",
@@ -91,7 +91,7 @@ export const productOptions: Array<DropdownOption> = [
   },
 ];
 
-export const pagesOptions: Array<DropdownOption> = [
+export const pagesOptions: Array<LabelledOption> = [
   {
     label: "Pages",
     value: "pages",
@@ -110,7 +110,7 @@ export const pagesOptions: Array<DropdownOption> = [
   },
 ];
 
-export const contactOptions: Array<DropdownOption> = [
+export const contactOptions: Array<LabelledOption> = [
   {
     label: "Contact",
     value: "contact",

@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Dropdown from "@/components/Dropdown";
-import * as DropdownOptions from "@/static/dropdownOptions";
+import * as LabelledOptions from "@/static/LabelledOptions";
 import ActionableIcon from "@/components/ActionableIcon";
 import { Icon } from "@/types/CustomComponents";
 
@@ -10,14 +10,14 @@ const MenuNavbar = () => {
       <>
         <section className="categories-wrapper">
           <ActionableIcon icon={Icon.menu} />
-          <Dropdown options={DropdownOptions.categories} />
+          <Dropdown options={LabelledOptions.categories} />
         </section>
         <section className="sections">
-          <Dropdown options={DropdownOptions.homeOptions} />
-          <Dropdown options={DropdownOptions.aboutOptions} />
-          <Dropdown options={DropdownOptions.productOptions} />
-          <Dropdown options={DropdownOptions.pagesOptions} />
-          <Dropdown options={DropdownOptions.contactOptions} />
+          <Dropdown options={LabelledOptions.homeOptions} />
+          <Dropdown options={LabelledOptions.aboutOptions} />
+          <Dropdown options={LabelledOptions.productOptions} />
+          <Dropdown options={LabelledOptions.pagesOptions} />
+          <Dropdown options={LabelledOptions.contactOptions} />
         </section>
         <section className="contact">
             <ActionableIcon icon={Icon.contact} iconProps={{width: 30, height: 30, alt: 'Contact icon'}}/>

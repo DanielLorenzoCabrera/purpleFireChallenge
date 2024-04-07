@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Dropdown from "@/components/Dropdown";
 import Logo from "@/components/Logo";
 import SearchInput from "@/components/SearchInput";
-import { categories } from "@/static/dropdownOptions";
+import { categories } from "@/static/LabelledOptions";
 import { Theme } from "@/types/CustomTypes";
 import Link from "next/link";
 import ActionableIcon from "@/components/ActionableIcon";
