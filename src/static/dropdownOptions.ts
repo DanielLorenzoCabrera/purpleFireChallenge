@@ -15,7 +15,7 @@ export const langOptions: Array<DropdownOption> = [
   },
 ];
 
-export const currencyOptions :Array<DropdownOption>  = [
+export const currencyOptions: Array<DropdownOption> = [
   {
     label: "USD",
     value: "USD",
@@ -30,8 +30,7 @@ export const currencyOptions :Array<DropdownOption>  = [
   },
 ];
 
-
-export const categories:Array<DropdownOption>  = [
+export const categories: Array<DropdownOption> = [
   {
     label: "All categories",
     value: "all",
@@ -56,4 +55,68 @@ export const categories:Array<DropdownOption>  = [
     label: "Category 5",
     value: "category_5",
   },
-]
+];
+
+export const homeOptions: Array<DropdownOption> = [
+  {
+    label: "Home",
+    value: "home",
+  },
+  {
+    label: "Landing page",
+    value: "landing",
+  },
+];
+
+export const aboutOptions: Array<DropdownOption> = [
+  {
+    label: "About",
+    value: "about",
+  },
+  {
+    label: "About the products",
+    value: "about_products",
+  },
+];
+
+
+export const productOptions: Array<DropdownOption> = [
+  {
+    label: "Product",
+    value: "product",
+  },
+  {
+    label: "Products on sale",
+    value: "sale_products",
+  },
+];
+
+export const pagesOptions: Array<DropdownOption> = [
+  {
+    label: "Pages",
+    value: "pages",
+  },
+  {
+    label: "Television",
+    value: "tv",
+  },
+  {
+    label: "Gaming",
+    value: "gaming",
+  },
+  {
+    label: "Phones",
+    value: "phones",
+  },
+];
+
+export const contactOptions: Array<DropdownOption> = [
+  {
+    label: "Contact",
+    value: "contact",
+  },
+  {
+    label: "Contact the manufacturer",
+    value: "contact_manufacturer",
+  },
+];

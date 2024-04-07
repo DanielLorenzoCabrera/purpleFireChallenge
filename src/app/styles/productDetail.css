@@ -17,7 +17,9 @@ main {
       margin-right: auto;
     }
 
-    & .dropdown, & .search-input input, .search-input input::placeholder {
+    & .dropdown,
+    & .search-input input,
+    .search-input input::placeholder {
       font-size: 1em;
     }
 
@@ -42,7 +44,7 @@ main {
 
         & a {
           text-decoration: none;
-          color: var(--black-color)
+          color: var(--black-color);
         }
       }
     }
@@ -52,6 +54,54 @@ main {
       flex-flow: row nowrap;
       gap: 1em;
       padding: 0 2em;
+    }
+  }
+
+  & nav.menu-navbar {
+    
+    color: var(--white-color);
+    & .categories-wrapper {
+      flex: 1 1 200px;
+      max-width: 350px;
+      padding: 0 2em;
+      background-color: var(--primary-color);
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
+
+    & .sections {
+      flex: 2 0 300px;
+
+      display: flex;
+      justify-content: center;
+      border-right: .1em solid var(--white-color);
+
+      & * {
+        text-transform: uppercase;
+      }
+    }
+
+    & .contact {
+      display: flex;
+      flex: 1 1 200px;
+      max-width: 350px;
+      gap: 1em;
+      padding: 0 2em;
+      flex-flow: row nowrap;
+      min-height: 100%;
+      & div {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        text-transform: uppercase;
+        
+
+
+        & span:first-of-type {
+          font-weight: 100;
+        }
+      }
     }
   }
 }
