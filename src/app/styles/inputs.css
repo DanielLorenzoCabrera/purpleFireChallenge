@@ -1,0 +1,9 @@
+.dropdown {
+    
+    &.dark {
+        color: var(--white-color);
+        & img {
+            filter: invert(1);
+        }
+    }
+}
