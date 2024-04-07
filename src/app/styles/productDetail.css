@@ -10,5 +10,41 @@ main {
 
   & nav.search {
     background-color: var(--white-color);
+    padding: 2em 2em 2em 4em;
+    font-size: 1.2em;
+
+    & .logo {
+      margin-right: auto;
+    }
+
+    & .dropdown, & .search-input input, .search-input input::placeholder {
+      font-size: 1em;
+    }
+
+    & > section {
+      outline: 0.1em solid var(--white-color-medium);
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      min-height: var(--input-min-height);
+      min-width: 300px;
+
+      &:last-of-type {
+        justify-content: space-between;
+        padding: 5px 2em;
+        width: min(600px, 100%);
+      }
+
+      & .auth-links {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 1em;
+
+        & a {
+          text-decoration: none;
+          color: var(--black-color)
+        }
+      }
+    }
   }
 }

@@ -1,6 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Dropdown from "@/components/Dropdown";
 import Logo from "@/components/Logo";
+import SearchInput from "@/components/SearchInput";
+import { categories } from "@/static/dropdownOptions";
+import { Theme } from "@/types/CustomTypes";
+import Link from "next/link";
 
 const SearchNavbar = () => {
   return (
@@ -8,8 +12,14 @@ const SearchNavbar = () => {
       <>
         <Logo />
         <section>
-          {/* <Dropdown options={langOptions} customClass="lang" />
-          <Dropdown options={currencyOptions} customClass="currency" /> */}
+          <SearchInput placeholder="Search products" />
+        </section>
+        <section>
+          <Dropdown options={categories} theme={Theme.light} />
+          <div className="auth-links">
+            <Link href={"/login"}>Login</Link>
+            <Link href={"/login"}>Signup</Link>
+          </div>
         </section>
       </>
     </Navbar>

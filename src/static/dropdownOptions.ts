@@ -1,4 +1,6 @@
-export const langOptions = [
+import { DropdownOption } from "@/types/CustomComponents";
+
+export const langOptions: Array<DropdownOption> = [
   {
     label: "ENG",
     value: "ENG",
@@ -13,7 +15,7 @@ export const langOptions = [
   },
 ];
 
-export const currencyOptions = [
+export const currencyOptions :Array<DropdownOption>  = [
   {
     label: "USD",
     value: "USD",
@@ -27,3 +29,31 @@ export const currencyOptions = [
     value: "GPB",
   },
 ];
+
+
+export const categories:Array<DropdownOption>  = [
+  {
+    label: "All categories",
+    value: "all",
+  },
+  {
+    label: "Category 1",
+    value: "category_1",
+  },
+  {
+    label: "Category 2",
+    value: "category_2",
+  },
+  {
+    label: "Category 3",
+    value: "category_3",
+  },
+  {
+    label: "Category 4",
+    value: "category_4",
+  },
+  {
+    label: "Category 5",
+    value: "category_5",
+  },
+]
