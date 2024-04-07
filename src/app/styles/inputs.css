@@ -2,7 +2,7 @@
   height: var(--input-min-height);
   padding: 0 1em;
   font-weight: 200;
-  gap: .5em;
+  gap: 0.5em;
 
   & > * {
     border: 0;
@@ -31,7 +31,7 @@
   & input {
     padding: 0 1em;
     font-weight: 200;
-
+    border: 0;
     flex: 1;
 
     &::placeholder {

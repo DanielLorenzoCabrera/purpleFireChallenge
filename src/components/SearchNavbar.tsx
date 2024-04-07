@@ -5,6 +5,9 @@ import SearchInput from "@/components/SearchInput";
 import { categories } from "@/static/dropdownOptions";
 import { Theme } from "@/types/CustomTypes";
 import Link from "next/link";
+import ActionableIcon from "@/components/ActionableIcon";
+import ShoppingCartIcon from "@/components/ShoppingCartIcon";
+import { Icon } from "@/types/CustomComponents";
 
 const SearchNavbar = () => {
   return (
@@ -21,6 +24,10 @@ const SearchNavbar = () => {
             <Link href={"/login"}>Signup</Link>
           </div>
         </section>
+        <div className="actionable-icons">
+          <ActionableIcon icon={Icon.heart} />
+          <ShoppingCartIcon numberOfProducts={6}/>
+        </div>
       </>
     </Navbar>
   );

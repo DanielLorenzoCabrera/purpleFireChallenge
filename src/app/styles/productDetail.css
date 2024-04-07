@@ -46,5 +46,12 @@ main {
         }
       }
     }
+
+    & .actionable-icons {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 1em;
+      padding: 0 2em;
+    }
   }
 }
