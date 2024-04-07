@@ -4,3 +4,19 @@
     box-sizing: border-box;
     font-family: 'Inter', serif;
 }
+
+.logo {
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 2em;
+    gap: .5em;
+    align-items: flex-end;
+
+    font-family: 'Inconsolata', 'Roboto';
+
+    & .dot {
+        color: var(--primary-color);
+        font-size: 1.2em;
+        margin: 0 .1em;
+    }
+}
