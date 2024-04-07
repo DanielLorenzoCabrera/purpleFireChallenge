@@ -15,3 +15,9 @@ export enum Icon {
   menu = menuIcon,
   contact = contactIcon,
 }
+
+
+export interface Heading {
+  title: string;
+  subTitle?: string;
+}

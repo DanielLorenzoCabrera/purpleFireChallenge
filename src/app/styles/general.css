@@ -3,5 +3,31 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', serif;
+    color: var(--black-color);
 }
 
+.view-wrapper {
+
+    & .heading {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 3em;
+        gap: 1em;
+
+        & h1 {
+            font-size: var(--h1-size);
+            font-weight: 400;
+        }
+
+        & h2 {
+            font-size: var(--h2-size);
+            font-weight: 200;
+        }
+    }
+
+    & .content {
+        
+    }
+}
