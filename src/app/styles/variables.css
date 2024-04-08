@@ -4,7 +4,7 @@
   --secondary-color: #191919;
   --aux-color: #969696;
   --white-color: #fff;
-  --white-color-medium: #f0f0f0;
+  --white-color-medium: #F4F5F8;
   --white-color-dark: #f3f3f3;
   --black-color: #191919;
 
@@ -13,4 +13,9 @@
 
 
   --input-min-height: 60px;
+
+
+  --product-image-width-small: 152px;
+  --product-image-height-small: 115px;
+  --product-image-width-big: 548px;
 }

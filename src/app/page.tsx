@@ -3,6 +3,9 @@ import SearchNavbar from "@/components/SearchNavbar";
 import MenuNavbar from "@/components/MenuNavbar";
 import ViewWrapper from "@/components/ViewWrapper";
 import { TVCollectionHeading } from "@/static/headings";
+import { TV_LG } from "@/static/dummyData";
+import ProductDetail from "@/components/ProductDetail";
+
 
 export default function DetailPage() {
   return (
@@ -11,7 +14,7 @@ export default function DetailPage() {
       <SearchNavbar/>
       <MenuNavbar/>
       <ViewWrapper heading={TVCollectionHeading}>
-        <div>content</div>
+        <ProductDetail product={TV_LG}/>
       </ViewWrapper>
     </main>
   );
