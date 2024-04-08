@@ -4,6 +4,8 @@ main {
     font-family: "Inter", serif;
     justify-content: center;
     gap: 4em;
+    width: min(1200px, 100%);
+    margin: 0 auto;
 
     & .product-info {
       display: flex;
@@ -38,9 +40,8 @@ main {
       & > ul:last-of-type {
         display: flex;
         flex-flow: column nowrap;
-        gap: .5em;
+        gap: 0.5em;
       }
-
 
       & .product-types {
         display: flex;
@@ -50,18 +51,18 @@ main {
         padding: 2em 0;
 
         & span {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color:var(--aux-color);
-            padding: 1em;
-            width: var(--product-type-width);
-            cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--aux-color);
+          padding: 1em;
+          width: var(--product-type-width);
+          cursor: pointer;
 
-            &.selected {
-                outline: .1em solid var(--primary-color);
-                color:  var(--primary-color);
-            }
+          &.selected {
+            outline: 0.1em solid var(--primary-color);
+            color: var(--primary-color);
+          }
         }
       }
     }
@@ -101,6 +102,52 @@ main {
           height: 100%;
           object-fit: contain;
         }
+      }
+    }
+
+    & .quantity {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 2em;
+
+      & section:first-of-type {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 0.5em;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        & span {
+          font-size: 24px;
+          color: var(--aux-color);
+        }
+
+        & span:first-of-type {
+          color: var(--black-color);
+          font-size: var(--product-name-font-size);
+        }
+
+        & .counter {
+          min-width: 150px;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          gap: 3em;
+
+          & input[type=button] {
+            border: 0;
+            background-color: transparent;
+            height: 24px;
+            width: 24px;
+            font-size: 1.5em;
+          }
+        }
+      }
+
+      & section:last-of-type {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
       }
     }
   }

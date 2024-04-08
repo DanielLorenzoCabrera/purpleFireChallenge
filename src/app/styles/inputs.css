@@ -1,3 +1,7 @@
+input, button {
+  border: 0;
+}
+
 .dropdown {
   height: var(--input-min-height);
   padding: 0 1em;
@@ -45,4 +49,19 @@
     width: var(--input-min-height);
     height: var(--input-min-height);
   }
+}
+
+.primary-button {
+  height: var(--input-min-height);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  min-width: 200px;
+}
+
+.primary-button-inverted {
+  min-width: 200px;
+  height: var(--input-min-height);
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  outline: 0.1em solid var(--primary-color);
 }

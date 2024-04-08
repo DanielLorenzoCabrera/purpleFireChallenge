@@ -2,6 +2,7 @@ import { Product } from "@/types/CustomComponents";
 import Image from "next/image";
 import starImage from "@/assets/img/star.png";
 import ProductTypesDisplay from "@/components/ProductTypesDisplay";
+import ProductQuantity from "@/components/ProductQuantity";
 
 interface ProductInfoProps {
   product: Product;
@@ -43,6 +44,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
           ))}
         </ul>
         <ProductTypesDisplay types={product.types}/>
+        <ProductQuantity price={product.price} lastPrice={product.lastPrice}/>
     </article>
   );
 };
