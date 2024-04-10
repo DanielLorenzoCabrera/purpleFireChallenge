@@ -32,3 +32,23 @@
         padding: 2em;
     }
 }
+
+
+.tabs {
+    display: flex;
+    width: 100%;
+    
+    & input {
+        background-color: transparent;
+        height: var(--input-min-height);
+        flex: 1;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 22px;
+
+
+        &.selected {
+            border-bottom: .1em solid var(--primary-color);
+        }
+    }
+}

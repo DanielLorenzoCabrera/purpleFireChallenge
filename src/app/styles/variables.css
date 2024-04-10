@@ -8,6 +8,11 @@
   --white-color-dark: #f3f3f3;
   --black-color: #191919;
 
+  --new-tag: #12a05c;
+  --discount-tag: #e73c17;
+  --hot-tag: #ff9900;
+  --info-tag: #7f7cf6;
+
   --h1-size: 40px;
   --h2-size: 18px;
 
@@ -17,5 +22,7 @@
   --product-image-height-small: 115px;
   --product-image-width-big: 548px;
   --product-name-font-size: 32px;
-  --product-type-width: 200px;
+  --product-type-width: 150px;
+  --related-product-height: 300px;
+  --related-product-width: 430px;
 }

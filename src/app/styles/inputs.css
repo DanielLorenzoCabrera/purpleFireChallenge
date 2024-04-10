@@ -65,3 +65,19 @@ input, button {
   color: var(--primary-color);
   outline: 0.1em solid var(--primary-color);
 }
+
+
+.cart-button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1.5em;
+  padding: 1em 2em;
+  background-color: var(--white-color);
+  
+  & span {
+    font-size: 1.2em;
+    color: var(--aux-color);
+
+  }
+}

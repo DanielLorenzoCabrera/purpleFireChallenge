@@ -1,6 +1,7 @@
-'use client'
+"use client";
 import ProductImagesDisplay from "@/components/ProductImagesDisplay";
 import ProductInfo from "@/components/ProductInfo";
+import ProductDetailedInformation from "@/components/ProductDetailedInformation";
 import type { Product } from "@/types/CustomComponents";
 
 interface ProductDetailProps {
@@ -10,8 +11,17 @@ interface ProductDetailProps {
 const ProductDetail = ({ product }: ProductDetailProps) => {
   return (
     <article className="product-detail">
-      <ProductImagesDisplay images={product.images} />
-      <ProductInfo product={product}/>
+      <section>
+        <ProductImagesDisplay images={product.images} />
+        <ProductInfo product={product} />
+      </section>
+      <section>
+        <ProductDetailedInformation
+          description={product.description}
+          specification={product.specification}
+          reviews={product.reviews}
+        />
+      </section>
     </article>
   );
 };

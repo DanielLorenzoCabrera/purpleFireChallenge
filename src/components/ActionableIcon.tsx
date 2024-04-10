@@ -10,6 +10,7 @@ interface IconProps {
 interface ActionableIconProps {
   icon: Icon;
   iconProps?: IconProps;
+  className?:string,
   onClick?: () => void;
 }
 
@@ -19,9 +20,9 @@ const defaultIconProps = {
     alt: 'actionable icon',
 }
 
-const ActionableIcon = ({ icon, iconProps = defaultIconProps }: ActionableIconProps) => {
+const ActionableIcon = ({ icon, iconProps = defaultIconProps, className = '' }: ActionableIconProps) => {
   return (
-    <div className="actionable-icon">
+    <div className={`actionable-icon ${className}`}>
       <Image
         src={icon}
         height={iconProps.height}
