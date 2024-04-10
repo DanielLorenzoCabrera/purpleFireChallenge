@@ -1,5 +1,6 @@
 input, button {
   border: 0;
+  height: var(--input-min-height);
 }
 
 .dropdown {
@@ -51,11 +52,19 @@ input, button {
   }
 }
 
-.primary-button {
+
+.primary-button  {
   height: var(--input-min-height);
   background-color: var(--primary-color);
   color: var(--white-color);
   min-width: 200px;
+  transition:all ease-in-out .5s 0s;
+
+  &:hover {
+    background-color: var(--primary-color-dark);
+    cursor: pointer;
+    transition:all ease-in-out .5s 0s;
+  }
 }
 
 .primary-button-inverted {
@@ -81,3 +90,4 @@ input, button {
 
   }
 }
+

@@ -1,4 +1,4 @@
-"use client";
+
 import ProductImagesDisplay from "@/components/ProductImagesDisplay";
 import ProductInfo from "@/components/ProductInfo";
 import ProductDetailedInformation from "@/components/ProductDetailedInformation";
