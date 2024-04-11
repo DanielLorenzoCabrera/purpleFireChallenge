@@ -1,6 +1,6 @@
 import type { RelatedProduct } from "@/types/CustomComponents";
 import ActionableIcon from "@/components/ActionableIcon";
-import { Icon } from "@/types/CustomComponents";
+import { Icon } from "@/assets/img/Icons";
 import Image from "next/image";
 import AddToCartButton from "@/components/buttons/AddToCartButton";
 

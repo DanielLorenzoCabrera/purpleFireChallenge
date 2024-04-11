@@ -7,7 +7,6 @@
 }
 
 .view-wrapper {
-    padding-bottom: 4em;
 
     & .heading {
         display: flex;
@@ -29,9 +28,7 @@
         }
     }
 
-    & .content {
-        padding: 2em 0;
-    }
+    
 }
 
 

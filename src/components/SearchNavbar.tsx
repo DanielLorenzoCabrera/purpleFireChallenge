@@ -7,7 +7,7 @@ import { Theme } from "@/types/CustomTypes";
 import Link from "next/link";
 import ActionableIcon from "@/components/ActionableIcon";
 import ShoppingCartIcon from "@/components/ShoppingCartIcon";
-import { Icon } from "@/types/CustomComponents";
+import { Icon } from "@/assets/img/Icons";
 
 const SearchNavbar = () => {
   return (

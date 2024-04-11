@@ -1,4 +1,4 @@
-import { Icon } from "@/types/CustomComponents";
+import { Icon } from "@/assets/img/Icons";
 import Image from "next/image";
 
 interface IconProps {

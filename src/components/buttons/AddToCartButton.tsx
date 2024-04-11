@@ -1,5 +1,5 @@
 import ActionableIcon from "@/components/ActionableIcon";
-import { Icon } from "@/types/CustomComponents";
+import { Icon } from "@/assets/img/Icons";
 
 const AddToCartButton = () => {
   return (

@@ -1,4 +1,5 @@
 import { Heading } from "@/types/CustomComponents";
+import Footer from "@/components/footer/Footer";
 
 interface ViewWrapperProps {
   heading?: Heading;
@@ -15,6 +16,7 @@ const ViewWrapper = ({ heading, children }: ViewWrapperProps) => {
         </section>
       )}
       <section className="content">{children}</section>
+      <Footer/>
     </article>
   );
 };

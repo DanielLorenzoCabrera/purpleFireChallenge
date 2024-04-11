@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Dropdown from "@/components/Dropdown";
 import * as LabelledOptions from "@/static/LabelledOptions";
 import ActionableIcon from "@/components/ActionableIcon";
-import { Icon } from "@/types/CustomComponents";
+import { Icon } from "@/assets/img/Icons";
 
 const MenuNavbar = () => {
   return (
