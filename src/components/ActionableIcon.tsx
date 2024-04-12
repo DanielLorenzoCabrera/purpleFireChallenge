@@ -8,7 +8,7 @@ interface IconProps {
 }
 
 interface ActionableIconProps {
-  icon: Icon;
+  icon: any;
   iconProps?: IconProps;
   className?:string,
   onClick?: () => void;
