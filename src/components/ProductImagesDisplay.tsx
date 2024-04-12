@@ -14,7 +14,7 @@ const ProductImagesDisplay = ({
   const isSelected = (index: number) =>  imageSelectedIndex === index ? 'selected': ''
   return (
     <section className="product-images-display">
-      <figure>
+      <figure className="product-images">
         {images.map((image, index) => (
           <figure key={index} className={isSelected(index)}>
             <Image

@@ -1,4 +1,5 @@
 import React from "react";
+import { useAppContext } from "@/components/AppWrapper";
 
 interface FooterSectionProps {
   title: string;
@@ -6,10 +7,11 @@ interface FooterSectionProps {
 }
 
 const FooterSection = ({ title, children }: FooterSectionProps) => {
+  const {isSmallScreen} = useAppContext()
   return (
     <section>
       <h6>{title}</h6>
-      {children}
+      {!isSmallScreen && children}
     </section>
   );
 };

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./styles/global.css";
-import "@/assets/fonts/materialUIFonts"
-
+import "@/assets/fonts/materialUIFonts";
+import AppWrapper from "@/components/AppWrapper";
 
 export const metadata: Metadata = {
   title: "Needus",
@@ -15,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AppWrapper>{children}</AppWrapper>
+      </body>
     </html>
   );
 }

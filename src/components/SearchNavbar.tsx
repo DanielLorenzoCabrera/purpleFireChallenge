@@ -8,21 +8,24 @@ import Link from "next/link";
 import ActionableIcon from "@/components/ActionableIcon";
 import ShoppingCartIcon from "@/components/ShoppingCartIcon";
 import { Icon } from "@/assets/img/Icons";
+import { useAppContext } from "@/components/AppWrapper";
 
 const SearchNavbar = () => {
+  const {isSmallScreen} = useAppContext()
+
   return (
     <Navbar customClass="search">
       <>
         <Logo />
-        <section>
-          <SearchInput placeholder="Search products" />
+        <section className={isSmallScreen ? 'mobile' : ''}>
+          {isSmallScreen ? <ActionableIcon icon={Icon.searchMobile}/> : <SearchInput placeholder="Search products" />}
         </section>
-        <section>
-          <Dropdown options={categories} theme={Theme.light} />
-          <div className="auth-links">
+        <section className="auth">
+          {!isSmallScreen && <Dropdown options={categories} theme={Theme.light} />}
+          {isSmallScreen ? <ActionableIcon icon={Icon.user}/> : <div className="auth-links">
             <Link href={"/login"}>Login</Link>
             <Link href={"/login"}>Signup</Link>
-          </div>
+          </div>}
         </section>
         <div className="actionable-icons">
           <ActionableIcon icon={Icon.heart} />

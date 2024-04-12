@@ -1,6 +1,7 @@
 import Tab from "@/components/TabBar";
 import { LabelledOption } from "@/types/CustomComponents";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useAppContext } from "@/components/AppWrapper";
 
 interface ProductDetailedInformationProps {
   description: string;
@@ -19,6 +20,13 @@ const ProductDetailedInformation = ({
   specification,
   reviews,
 }: ProductDetailedInformationProps) => {
+  const {isSmallScreen} = useAppContext()
+
+
+  useEffect(() => {
+    console.log('message from detailed', isSmallScreen)
+  }, [isSmallScreen])
+
   const [tabSelected, setTabSelected] = useState<string>("description");
   const isTabSelected = (value: string) =>
     value === tabSelected ? "selected" : "";

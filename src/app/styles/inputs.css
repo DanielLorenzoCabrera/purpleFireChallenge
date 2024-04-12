@@ -8,6 +8,11 @@ input, button {
   padding: 0 1em;
   font-weight: 200;
   gap: 0.5em;
+  border: 0;
+
+  & fieldset {
+    border: 0;
+  }
 
   & > * {
     border: 0;

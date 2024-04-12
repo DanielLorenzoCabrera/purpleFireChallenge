@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import LangAndCurrencyNavBar from "@/components/LangAndCurrencyNavbar";
 import SearchNavbar from "@/components/SearchNavbar";
 import MenuNavbar from "@/components/MenuNavbar";
@@ -8,13 +8,24 @@ import { TV_LG, relatedProducts } from "@/static/dummyData";
 import ProductDetail from "@/components/ProductDetail";
 import RelatedProductDisplayer from "@/components/RelatedProductsDisplayer";
 import NewsletterSubscription from "@/components/newsletter/NewsletterSubscription";
+import AppWrapper from "@/components/AppWrapper";
+import { useAppContext } from "@/components/AppWrapper";
+import { useEffect } from "react";
 
-export default function DetailPage() {
+const DetailPage = () => {
+  const { isSmallScreen } = useAppContext();
+
+  useEffect(() => {
+    console.log("eeee", isSmallScreen);
+  }, [isSmallScreen]);
+
   return (
-    <main>
-      <LangAndCurrencyNavBar />
-      <SearchNavbar />
-      <MenuNavbar />
+    <>
+      <header>
+        {!isSmallScreen && <LangAndCurrencyNavBar />}
+        <SearchNavbar />
+        <MenuNavbar />
+      </header>
       <ViewWrapper heading={TVCollectionHeading}>
         <>
           <ProductDetail product={TV_LG} />
@@ -22,6 +33,8 @@ export default function DetailPage() {
           <NewsletterSubscription />
         </>
       </ViewWrapper>
-    </main>
+    </>
   );
-}
+};
+
+export default DetailPage;

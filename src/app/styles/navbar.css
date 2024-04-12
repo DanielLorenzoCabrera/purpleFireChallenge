@@ -18,7 +18,7 @@ nav {
 
 & nav.search {
   background-color: var(--white-color);
-  padding: 2em 2em 2em 4em;
+  padding: 2em;
   font-size: 1.2em;
 
   & .logo {
@@ -36,13 +36,18 @@ nav {
     display: flex;
     align-items: center;
     padding: 5px;
+    flex: 1;
+    width: auto;
     min-height: var(--input-min-height);
-    min-width: 300px;
+
+    &.mobile {
+      flex: 0;
+    }
+    
 
     &:last-of-type {
       justify-content: space-between;
       padding: 5px 2em;
-      width: min(600px, 100%);
     }
 
     & .auth-links {
@@ -66,11 +71,13 @@ nav {
 }
 
 & nav.menu-navbar {
+  height: var(--input-min-height);
   color: var(--white-color);
   & .categories-wrapper {
-    flex: 1 1 200px;
-    max-width: 350px;
-    padding: 0 2em;
+    height: 100%;
+    flex: 1 ;
+    max-width: 300px;
+    padding: 0 1em;
     background-color: var(--primary-color);
     display: flex;
     flex-flow: row nowrap;
@@ -91,8 +98,9 @@ nav {
 
   & .contact {
     display: flex;
-    flex: 1 1 200px;
-    max-width: 350px;
+    align-items: center;
+    flex: 1 1 50px;
+    max-width: 300px;
     gap: 1em;
     padding: 0 2em;
     flex-flow: row nowrap;

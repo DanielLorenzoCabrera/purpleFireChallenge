@@ -78,7 +78,7 @@
   background-size: 130%;
   background-position: 10% 50%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   gap: 4em;
 

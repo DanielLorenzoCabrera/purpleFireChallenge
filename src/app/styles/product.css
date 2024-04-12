@@ -13,7 +13,9 @@
     background-color: var(--white-color-dark);
     display: flex;
     flex-flow: column nowrap;
-    width: clamp(100px, 300px, 300px);
+    flex: 1;
+    max-width: 300px;
+    /* width: clamp(100px, 300px, 300px); */
     min-height: 430px;
     padding: 0.5em 0.5em 2.5em 0.5em;
     align-items: center;

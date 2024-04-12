@@ -10,6 +10,10 @@ import youtubeIcon from "@/assets/img/youtube.svg"
 import whatsappIcon from "@/assets/img/whatsapp.svg"
 import mobileIcon from "@/assets/img/mobile.svg"
 import locationIcon from "@/assets/img/location.svg"
+import searchIcon from "@/assets/img/search.svg"
+import searchIconMobile from "@/assets/img/search-mobile.svg"
+import userIcon from "@/assets/img/user.svg"
+
 
 export enum Icon {
     heart = heartIcon,
@@ -23,4 +27,7 @@ export enum Icon {
     whatsapp = whatsappIcon,
     mobile = mobileIcon,
     location = locationIcon,
+    search= searchIcon,
+    searchMobile= searchIconMobile,
+    user= userIcon
   }
